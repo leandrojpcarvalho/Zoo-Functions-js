@@ -20,4 +20,7 @@ describe('Testes da função HandlerElephants', () => {
   it('verifica se ao passar o parametro avaregeAge retorna a quantidade de elefantes', () => {
     expect(handlerElephants('averageAge')).toBe(10.5);
   });
+  it('verifica se ao passar uma chave do objeto retorna o proprio valor', () => {
+    expect(handlerElephants('location')).toBe('NW');
+  });
 });

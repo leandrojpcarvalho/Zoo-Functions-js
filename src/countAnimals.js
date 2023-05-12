@@ -7,10 +7,8 @@ const countAnimals = (animal) => {
     if (!sex) {
       return species.find((bicho) => bicho.name === specie).residents.length;
     }
-    if (sex) {
-      return species.find((bicho) => bicho.name === specie)
-        .residents.filter((bicho) => bicho.sex === sex).length;
-    }
+    return species.find((bicho) => bicho.name === specie)
+      .residents.filter((bicho) => bicho.sex === sex).length;
   }
   const newObj = {};
   species.forEach((bicho) => {
